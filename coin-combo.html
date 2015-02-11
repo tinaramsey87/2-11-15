@@ -5,27 +5,27 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-1.11.2.js"></script>
     <script src="js/coin-combo-scripts.js"></script>
-    <title>Anagram Finder</title>
+    <title>Coin Combination Counter</title>
   </head>
   <body>
     <div class="container">
-      <h1>Anagram Your Sword</h1>
+      <h1>Find Combinations of Coins</h1>
 
       <div class="form">
-        <form id="anagram">
-        <label for="word">Enter the word what you want sworded:</label>
-        <input id="word" type="text" placeholder="e.g. cart">
+        <form id="amount">
+        <label for="amount">Enter amount what you want to coin combinated:</label>
+        <input id="amount" type="text" placeholder="50"><label>cents</label><br>
 
-        <label for="checklist">Enter the swords what might be pulled from words:</label>
-        <input id="checklist" type="text" placeholder="e.g. rat, cat, art, tar">
-
-        <button type="submit" id="submit-btn" class="btn btn-large btn-success">Check it, yo</button>
+        <button type="submit" id="submit-btn" class="btn btn-large btn-success">Make it hail</button>
         </form>
 
         <div id="result">
-          <h5>Valid anagram(s) for <span class="word"></span>:</h5>
-          <h5><span class="anagrams"></span></h5>
+          <h4>Smallest combination of coins what can add to <span class="amount"></span> cents is:</h4>
         </div>
+
+        <div id="coin-result">
+        </div>
+
       </div>
     </div>
   </body>
