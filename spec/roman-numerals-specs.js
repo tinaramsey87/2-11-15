@@ -14,4 +14,12 @@ describe('romanNumeral', function() {
   it("concatinates multiple symbols when necessary", function() {
     expect(romanNumeral(6)).to.equal("VI")
   });
+
+  it("concatinates a pantload of symbols when necessary", function() {
+    expect(romanNumeral(3888)).to.equal("MMMDCCCLXXXVIII")
+  });
+
+  it("replaces quadnumerals with appropriate pre-counting whatevers", function () {
+    expect(romanNumeral(3999)).to.equal("MMMCMXCIX")
+  });
 });

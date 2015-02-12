@@ -21,3 +21,9 @@
   max-height: 219px;
   max-width: 219px;
 }
+
+.roman {
+  font-size: 130px;
+  font-family: 'Crimson Text', serif;
+  margin-left: 0px;
+}
